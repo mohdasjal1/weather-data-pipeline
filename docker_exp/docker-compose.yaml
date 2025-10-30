@@ -11,8 +11,8 @@ x-airflow-common:
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
     # Secrets (must be identical across all services)
-    AIRFLOW__CORE__FERNET_KEY: 'ECFZNHbIvaHkoEv-wc4lamq6JxL8bwF3m6VT7nY036E='
-    AIRFLOW__WEBSERVER__SECRET_KEY: 'c4c5854856873161593436b8eef2d57b'
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__WEBSERVER__SECRET_KEY: ''
     # Use the apiserver service name for internal comms
     AIRFLOW__WEBSERVER__BASE_URL: 'http://airflow-apiserver:8080'
     # Worker log server settings (ensure host is reachable via Docker network)
